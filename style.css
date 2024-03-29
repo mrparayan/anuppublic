@@ -5,7 +5,7 @@
     margin-left: auto;
     margin-right: auto;
     align-content: center;
-    background-color: aquamarine;
+    
 
 
 
@@ -13,10 +13,8 @@
 img {
 
 border-radius: 5%;
-max-width: 100%;
-height:auto;
-max-height: 70vh;
-display: block;
+height: 80vh;
+display: inline-block;
 background-color: rgb(207, 168, 158);
 box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
 margin-left: auto;
@@ -30,18 +28,25 @@ body{
 .dob {
    color: green;
    text-align: center;
-   width: 12%;
+   width: 320px;
    background-color: aliceblue;
    margin-left: auto;
    margin-right: auto;
+   padding : 0;
+    display: inline-block;
 
 }
 .name {
     background-color: aliceblue;
     color: green;
    text-align: center;
-   width: 12%;
+   width: 320px;
    margin-left: auto;
    margin-right: auto;
+   font-size:  60%;
+   display: inline-block;
+   text-align: center;
+   padding:0%;
+
     
 }
