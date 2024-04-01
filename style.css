@@ -103,3 +103,10 @@ body{
     border: 2px solid black;
     display: flex;
 } 
+.navbar img {
+    background-color: rgb(201, 248, 210);
+     width: auto; 
+     height: 30px;
+      border-radius: 50%;
+
+}
