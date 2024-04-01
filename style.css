@@ -70,8 +70,10 @@ body{
     padding: 3px 3px;
     text-decoration: none;
     background-color: white;
-    border-radius: 30px;
+    border-radius: 10px;
+    transition-duration: 1s;
 }
+
 .navbar li a:hover {
     padding: 3px 3px;
     text-decoration: none;
@@ -92,6 +94,7 @@ body{
     display: flex;
     background-color: rgb(201, 248, 210);
     color: rgb(53, 21, 21);
+    transition-duration: 2s;
 }
 .navbar input {
     border-radius: 14px;
