@@ -55,7 +55,7 @@ body{
 }
 
 .navli {
-    float: right;
+    float: left;
     list-style: none;
     padding: 3px 3px;
     margin: 13px 20px;
