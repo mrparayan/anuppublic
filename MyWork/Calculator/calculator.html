@@ -7,33 +7,59 @@
     <link rel="stylesheet" href="calc.css">
 </head>
 <body>
-    <button onclick="myFunction(this,'red')" type="button">7</button>    
-    <button onclick="myFunction(this,'red')" type="button">8</button>
-    <button onclick="myFunction(this,'red')" type="button">9</button>
-    <button onclick="myFunction(this,'red')" type="button">x</button>
-    <button onclick="myFunction(this,'red')" type="button">AC</button>
-    <br> 
-    <button onclick="myFunction(this,'red')" type="button">4</button>
-    <button onclick="myFunction(this,'red')" type="button">5</button>
-    <button onclick="myFunction(this,'red')" type="button">6</button>
-    <button onclick="myFunction(this,'red')" type="button">/</button>
-    <button onclick="myFunction(this,'red')" type="button">DEL</button>
-    <br> 
-    <button onclick="myFunction(this,'red')" type="button">1</button>
-    <button onclick="myFunction(this,'red')" type="button">2</button>
-    <button onclick="myFunction(this,'red')" type="button">3</button>
-    <button onclick="myFunction(this,'red')" type="button">+</button>
-    <button onclick="myFunction(this,'red')" type="button">-</button>
-    <br> 
-    <button onclick="myFunction(this,'red')" type="button">.</button>
-    <button onclick="myFunction(this,'red')" type="button">0</button>
-    <button onclick="myFunction(this,'red')" type="button">pi</button>
-    <button onclick="myFunction(this,'red')" type="button">e</button>
-    <button onclick="myFunction(this,'red')" type="button">=</button>    
-    <script>
-        function myFunction(Elements, color){
-            Elements.style.color=color;
-        }
+    <div class="disNum">
+        <p class="output" id="out">
+
+        </p>
+        
+    </div>  
+      
+<input class="button" id="nbtn" type="button" value="7">
+<input class="button" id="nbtn" type="button" value="8">
+<input class="button" id="nbtn" type="button" value="9">
+<input class="button" id="nbtn" type="button" value="x">
+<input class="button" id="nbtn" type="button" value="AC">
+<br>
+<input class="button" id="nbtn" type="button" value="4">
+<input class="button" id="nbtn" type="button" value="5">
+<input class="button" id="nbtn" type="button" value="6">
+<input class="button" id="nbtn" type="button" value="/">
+<input class="button" id="nbtn" type="button" value="DEL">
+<br>
+<input class="button" id="nbtn" type="button" value="1">
+<input class="button" id="nbtn" type="button" value="2">
+<input class="button" id="nbtn" type="button" value="3">
+<input class="button" id="nbtn" type="button" value="+">
+<input class="button" id="nbtn" type="button" value="-">
+<br>
+<input class="button" id="nbtn" type="button" value=".">
+<input class="button" id="nbtn" type="button" value="0">
+<input class="button" id="nbtn" type="button" value="pi">
+<input class="button" id="nbtn" type="button" value="e">    
+<input class="button" id="nbtn" type="button" value="="> 
+    
+<script>   
+    const buttons = document.querySelectorAll(".button");
+    const out1 = document.getElementById("out");
+    
+    buttons.forEach(button => {
+        button.addEventListener('click', function() {
+            out1.innerHTML = this.value;
+        });
+    });
     </script>
+    
+<!--
+        <script>   
+    const btn1 =document.getElementById("nbtn");
+    const out1 = document.getElementById("out");
+    function fun1() {
+
+        out1.innerHTML = btn1.value;
+     }
+    btn1.addEventListener('click', fun1);
+        
+    </script>
+    -->
 </body>
 </html>
