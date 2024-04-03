@@ -13,38 +13,42 @@
         </p>
         
     </div>  
-      
-<input class="button" id="nbtn" type="button" value="7">
-<input class="button" id="nbtn" type="button" value="8">
-<input class="button" id="nbtn" type="button" value="9">
-<input class="button" id="nbtn" type="button" value="x">
-<input class="button" id="nbtn" type="button" value="AC">
-<br>
-<input class="button" id="nbtn" type="button" value="4">
-<input class="button" id="nbtn" type="button" value="5">
-<input class="button" id="nbtn" type="button" value="6">
-<input class="button" id="nbtn" type="button" value="/">
-<input class="button" id="nbtn" type="button" value="DEL">
-<br>
-<input class="button" id="nbtn" type="button" value="1">
-<input class="button" id="nbtn" type="button" value="2">
-<input class="button" id="nbtn" type="button" value="3">
-<input class="button" id="nbtn" type="button" value="+">
-<input class="button" id="nbtn" type="button" value="-">
-<br>
-<input class="button" id="nbtn" type="button" value=".">
-<input class="button" id="nbtn" type="button" value="0">
-<input class="button" id="nbtn" type="button" value="pi">
-<input class="button" id="nbtn" type="button" value="e">    
-<input class="button" id="nbtn" type="button" value="="> 
+<div class="calctable">
+    <input class="button" id="nbtn" type="button" value="7">
+    <input class="button" id="nbtn" type="button" value="8">
+    <input class="button" id="nbtn" type="button" value="9">
+    <input class="button" id="nbtn" type="button" value="x">
+    <input class="button" id="nbtn" type="button" value="AC">
+    <br>
+    <input class="button" id="nbtn" type="button" value="4">
+    <input class="button" id="nbtn" type="button" value="5">
+    <input class="button" id="nbtn" type="button" value="6">
+    <input class="button" id="nbtn" type="button" value="/">
+    <input class="button" id="nbtn" type="button" value="DEL">
+    <br>
+    <input class="button" id="nbtn" type="button" value="1">
+    <input class="button" id="nbtn" type="button" value="2">
+    <input class="button" id="nbtn" type="button" value="3">
+    <input class="button" id="nbtn" type="button" value="+">
+    <input class="button" id="nbtn" type="button" value="-">
+    <br>
+    <input class="button" id="nbtn" type="button" value=".">
+    <input class="button" id="nbtn" type="button" value="0">
+    <input class="button" id="nbtn" type="button" value="pi">
+    <input class="button" id="nbtn" type="button" value="e">    
+    <input class="ceq" id="eq" type="button" value="="> 
+
+</div>
     
 <script>   
     const buttons = document.querySelectorAll(".button");
+    const equal =  document.getElementById("eq")
     const out1 = document.getElementById("out");
     
     buttons.forEach(button => {
         button.addEventListener('click', function() {
-            out1.innerHTML = this.value;
+            
+            out1.innerHTML += this.value;
         });
     });
     </script>

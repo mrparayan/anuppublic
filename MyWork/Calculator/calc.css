@@ -1,4 +1,4 @@
-.button {
+.calctable input {
     width: 50px;
     height: 50px;
     padding:0px;
@@ -6,7 +6,7 @@
     border-radius: 5px;
     border: none;
 }
-.button:hover {
+.calctable input:hover {
     background-color: rgb(164, 235, 214);
     transition-duration: 1sec;
 }
