@@ -1,11 +1,31 @@
+.wholetable {
+    border: solid 5px black ;
+    width: 320px;
+    height: 390px;
+    padding: 0%;
+    margin-left: 60px;
+    background-color: rgb(246, 197, 217);
+    padding: 40px;
+    margin-top: 70px;
+    padding-top: 50px;
+    border-radius: 5%;
+}
 .calctable input {
     width: 50px;
     height: 50px;
     padding:0px;
     margin: 5px;
     border-radius: 5px;
-    border: none;
+    border: 1px solid;
+    box-shadow: 0 4px #999;
 }
+.calctable{
+    padding-left: 0px;
+}
+.calctable input:active {
+    box-shadow: 0 1px #666;
+    transform: translateY(3px);
+  }
 .calctable input:hover {
     background-color: rgb(164, 235, 214);
     transition-duration: 1sec;
@@ -14,12 +34,12 @@ button:onclick {
     background-color: rgb(192, 92, 21);
 }
 .disNum {
+    margin-bottom: 25px;
     background-color: rgb(255, 255, 165);
     width: 310px;
-    height: 60px;
+    height: 120px;
     border-radius: 10px;
     border: 2px solid brown;
-    margin-top: 50px;
 }
 .output {
     text-align: right;

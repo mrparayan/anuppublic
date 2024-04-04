@@ -7,50 +7,86 @@
     <link rel="stylesheet" href="calc.css">
 </head>
 <body>
+<div class="wholetable">
     <div class="disNum">
-        <p class="output" id="out">
-
+        <p class="output" id="out" style="display:flex; width: 300px; height: 100px;">
+aaaaaaaaaaaaaaaaaaaaaaaaaaa
         </p>
         
     </div>  
 <div class="calctable">
-    <input class="button" id="nbtn" type="button" value="7">
-    <input class="button" id="nbtn" type="button" value="8">
-    <input class="button" id="nbtn" type="button" value="9">
-    <input class="button" id="nbtn" type="button" value="x">
-    <input class="button" id="nbtn" type="button" value="AC">
+    <input class="button" type="button" value="7">
+    <input class="button" type="button" value="8">
+    <input class="button" type="button" value="9">
+    <input class="button" type="button" value="*">
+    <input class="ac" id="ac" type="button" value="AC">
     <br>
-    <input class="button" id="nbtn" type="button" value="4">
-    <input class="button" id="nbtn" type="button" value="5">
-    <input class="button" id="nbtn" type="button" value="6">
-    <input class="button" id="nbtn" type="button" value="/">
-    <input class="button" id="nbtn" type="button" value="DEL">
+    <input class="button" type="button" value="4">
+    <input class="button" type="button" value="5">
+    <input class="button" type="button" value="6">
+    <input class="button" type="button" value="/">
+    <input class="del" id="del" type="button" value="DEL">
     <br>
-    <input class="button" id="nbtn" type="button" value="1">
-    <input class="button" id="nbtn" type="button" value="2">
-    <input class="button" id="nbtn" type="button" value="3">
-    <input class="button" id="nbtn" type="button" value="+">
-    <input class="button" id="nbtn" type="button" value="-">
+    <input class="button" type="button" value="1">
+    <input class="button" type="button" value="2">
+    <input class="button" type="button" value="3">
+    <input class="button" type="button" value="+">
+    <input class="button" type="button" value="-">
     <br>
-    <input class="button" id="nbtn" type="button" value=".">
-    <input class="button" id="nbtn" type="button" value="0">
-    <input class="button" id="nbtn" type="button" value="pi">
-    <input class="button" id="nbtn" type="button" value="e">    
+    <input class="button" type="button" value=".">
+    <input class="button" type="button" value="0">
+    <input class="pi" id="pi" type="button" value="pi">
+    <input class="e" id="e" type="button" value="e">    
     <input class="ceq" id="eq" type="button" value="="> 
 
 </div>
-    
+</div>
 <script>   
     const buttons = document.querySelectorAll(".button");
     const equal =  document.getElementById("eq")
     const out1 = document.getElementById("out");
-    
-    buttons.forEach(button => {
-        button.addEventListener('click', function() {
+    const del1 = document.getElementById("del");
+    const ac1 = document.getElementById("ac");
+    const pi = document.getElementById("pi");
+    const e = document.getElementById("e");
+//There are a lot of buttons class so, taking indiviual will be tedious job so, taking the loop
+//Loops works by <class>.forEach( <variable name> =>{...} )
+    buttons.forEach(x => { //Here x means just a suppose valiable, can be any
+        x.addEventListener('click', function() {
             
             out1.innerHTML += this.value;
         });
     });
+
+    ac1.addEventListener('click',function()
+    {
+        out1.innerHTML=null;
+    }
+    );
+    del1.addEventListener('click',function()
+    {
+        out1.innerHTML=out1.innerHTML.slice(0, -1);;
+    }
+    );
+    equal.addEventListener('click',function()
+    {
+        out1.innerHTML= eval(out1.innerHTML);
+    }
+    );
+    pi.addEventListener('click',function()
+    {
+        out1.innerHTML+= 3.1415;
+    }
+    );
+    e.addEventListener('click',function()
+    {
+        out1.innerHTML+=2.718;
+    }
+    );
+
+
+
+    
     </script>
     
 <!--

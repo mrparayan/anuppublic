@@ -110,3 +110,18 @@ body{
     border-radius: 50%;
 
 }
+.eduPanel {
+    background-color: red;
+}
+.card {
+    background-color: pink;
+    opacity: 60%;
+    width: 600px;
+    aspect-ratio: 1/1;
+    text-align: left;
+    display: inline-block;
+    padding: 0%;
+    margin: 10px;
+    
+
+}
