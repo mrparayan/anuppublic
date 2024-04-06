@@ -7,6 +7,7 @@
     <link rel="stylesheet" href="calc.css">
 </head>
 <body>
+<a href="https://adhikari-anup.com.np">Home</a>
 <div class="wholetable">
     <div class="disNum">
         <p class="output" id="out">
@@ -17,26 +18,26 @@
     <input class="button" type="button" value="7">
     <input class="button" type="button" value="8">
     <input class="button" type="button" value="9">
-    <input class="button" type="button" value="*">
-    <input class="ac" id="ac" type="button" value="AC">
+    <input class="button" type="button" value=" * ">
+    <input class="ac" id="ac" type="button" value=" AC ">
     <br>
     <input class="button" type="button" value="4">
     <input class="button" type="button" value="5">
     <input class="button" type="button" value="6">
-    <input class="button" type="button" value="/">
-    <input class="del" id="del" type="button" value="DEL">
+    <input class="button" type="button" value=" / ">
+    <input class="del" id="del" type="button" value=" DEL ">
     <br>
     <input class="button" type="button" value="1">
     <input class="button" type="button" value="2">
     <input class="button" type="button" value="3">
-    <input class="button" type="button" value="+">
-    <input class="button" type="button" value="-">
+    <input class="button" type="button" value=" + ">
+    <input class="button" type="button" value=" - ">
     <br>
     <input class="button" type="button" value=".">
     <input class="button" type="button" value="0">
-    <input class="pi" id="pi" type="button" value="pi">
-    <input class="e" id="e" type="button" value="e">    
-    <input class="ceq" id="eq" type="button" value="="> 
+    <input class="pi" id="pi" type="button" value=" pi ">
+    <input class="e" id="e" type="button" value=" e ">    
+    <input class="ceq" id="eq" type="button" value=" = "> 
 
 </div>
 </div>
@@ -53,7 +54,7 @@
     buttons.forEach(x => { //Here x means just a suppose valiable, can be any
         x.addEventListener('click', function() {
             
-            out1.innerHTML += this.value;
+            out1.innerHTML += x.value;//instead of x.value, we can also write this.value
         });
     });
 

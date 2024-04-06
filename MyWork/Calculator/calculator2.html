@@ -1,0 +1,110 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Calc2</title>
+    <link rel="stylesheet" href="calc2.css">
+</head>
+<body>
+    <div class="outSur">
+        <div class="dis" id="display">
+          
+        </div>
+    <div class="inSur">
+        <div class="ing">
+            <input type="button" value="7" class="buttons">
+            <input type="button" value="8" class="buttons">
+            <input type="button" value="9" class="buttons">
+            <input type="button" value=" / " class="buttons">
+            <input type="button" value=" AC " id="ac">
+       
+
+           
+            <br>
+            <input type="button" value="4" class="buttons">
+            <input type="button" value="5" class="buttons">
+            <input type="button" value="6" class="buttons">
+            <input type="button" value=" * " class="buttons">
+            <input type="button" value=" DEL" class="del" id="del">
+          
+                
+             <br>
+            <input type="button" value="1" class="buttons">
+            <input type="button" value="2" class="buttons">
+            <input type="button" value="3" class="buttons">
+            <input type="button" value=" + " class="buttons">
+            <input type="button" value=" - " class="buttons">
+        
+                
+            <br>
+            <input type="button" value="." class="buttons">
+            <input type="button" value="0" class="buttons">
+            <input type="button" value="e" class="e">
+            <input type="button" value=" pi " class="pi">
+            <input type="button" value=" = " id="eq" class="eq">
+
+
+
+            <br>
+        </div>
+        <div class="ins">
+            <input type="button" value=" sin(" class="buttons">
+            <input type="button" value=" cos(" class="buttons">
+            <input type="button" value=" tan(" class="buttons">
+            <br>
+            <input type="button" value=" sin'(" class="buttons">
+            <input type="button" value=" cos'(" class="buttons">
+            <input type="button" value=" tan'(" class="buttons">
+            <br>
+            <input type="button" value="x^" class="buttons">
+            <input  type="button" value=" sqrt(" class="buttons">
+            <input  type="button" value=" crt(" class="buttons">
+            <br>
+            <input type="button" value=" log(" class="buttons">
+            <input type="button" value=" ln(" class="buttons">
+            <input type="button" value=" abs(" class="buttons">
+        </div>
+    </div>
+    <div class="ex">
+        <input type="button" value="x!" id="fact">
+        <input type="button" value="%" class="buttons">
+        <input type="button" value="d=>g" class="buttons">
+        <input type="button" value="g=>d" class="buttons">
+        <input type="button" value="d=>r" class="buttons">
+        <input type="button" value="r=>d" class="buttons">
+        <input type="button" value="(" class="buttons">
+        <input type="button" value=")" class="buttons">
+    
+</div>
+</div>
+    <script>
+        const buttons = document.querySelectorAll(".buttons");
+        const del = document.getElementById('del');
+        const output = document.getElementById('display');
+        const equal = document.getElementById('eq');
+        const fact1 = document.getElementById('fact');
+        buttons.forEach(x =>{
+            // if(buttons == document.getElementById('eq')){
+            //     output.innerHTML = eval(output.innerHTML);
+            // } 
+            x.addEventListener('click', function(){
+                output.innerHTML += x.value; //You can write this.value instead of x.value
+            });
+        });
+        equal.addEventListener('click', function(){
+            output.innerHTML = eval(output.innerHTML);
+        });
+        del.addEventListener('click', function(){
+            output.innerHTML = output.innerHTML.slice(0,-1);
+        });
+        ac.addEventListener('click', function(){
+            output.innerHTML = null;
+        });
+        fact.addEventListener('click', function(){
+            output.innerHTML += "!";
+        });
+
+    </script>
+</body>
+</html>

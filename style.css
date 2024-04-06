@@ -111,17 +111,125 @@ body{
 
 }
 .eduPanel {
-    background-color: red;
+
+    display: block;
+    width: 100%;
+    /* justify-content: center; */
+    /* background-color: aqua; */
+    
+}
+.division {
+    display: flex;
+    /* background-color: aquamarine; */
+    justify-content: center;
+    /* align-content: center; */
+    margin: 30px;
+}
+@media(max-width:850px) {
+    .division{
+        display: block;
+        justify-content: center;
+        width: 100%;
+        
+
+        
+    }
 }
 .card {
-    background-color: pink;
-    opacity: 60%;
-    width: 600px;
+    background-color: rgb(53, 21, 21);
+    margin-left: auto ;
+    margin-right: auto;
+    
+ 
+    /* display: flex; */
+    width: 360px;
     aspect-ratio: 1/1;
     text-align: left;
-    display: inline-block;
     padding: 0%;
-    margin: 10px;
+    margin: 30px;
+    border-radius: 5%;
+    /* display: inline-flex; */
+    /* display: inline-flex; */
+    /* justify-items: center; */
+}
+/* >>>>>>>>>>>>>>> */
+/* inside of card */
+
+.info {
+
+    padding: 30px;
+    background-color: bisque;
+    width: 300px;
+    height: 300px;
+    border-radius: 5%;
+    rotate: 5deg;
+    transition-duration: 1s;
+}
+.info:hover {
+    border-radius: 5%;
+    padding: 30px;
+    background-color: rgb(201, 223, 255);
+    width: 300px;
+    height: 300px;
+    rotate: 0deg;
+}
+.school {
+    font-size: 50px;
+    font-family:'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+}
+.disc {
+    font-size: 15px;
+    color: rgb(246, 194, 160) ;
+    display: none;
+    font-family:'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
     
+}
+/* >>>>>>>>>>>>> */
+.info:hover {
+    margin-top: auto;
+    margin-bottom: auto;
+    .disc {
+        transition-delay: 3s;
+        transition-duration: 3s;
+        display: block;
+        color: rgb(39, 60, 69);
+        font-size: 15px;
+        
+    }
+    .school {
+        font-size: 35px;
+        transition-duration: 1s;
+    }
+    
+}
+.tab {
+    background-color: rgb(53, 21, 21);
+    width: 80%;
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 10%;
+    margin-bottom: 10%;
+    padding: 10px 10px 10px 10px;
+    font-size: 30px;
+    font-family:system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+    color: bisque;
+    border-radius: 10px;
+    text-align: center;
+
+}
+.tab:hover {
+    background-color: rgb(0, 0, 0);
+    width: 80%;
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 10%;
+    margin-bottom: 10%;
+    padding: 10px 10px 10px 10px;
+    font-size: 30px;
+    font-family:system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+    color: rgb(255, 255, 255);
+    border-radius: 10px;
+    text-align: center;
+    transition-duration: 1s;
 
 }
